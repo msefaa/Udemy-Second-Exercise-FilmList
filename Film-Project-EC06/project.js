@@ -13,9 +13,10 @@ function eventListeners () {
     cardbody.addEventListener("click", deleteFilm)
     clear.addEventListener("click",clearallFilms)
     document.addEventListener("DOMContentLoaded",function(){
-        const films=storage.getfilmstoStorage()
+        const films=Storage.getfilmstoStorage()
         films.forEach(film => {
             UI.addFilmToUI(film)
+        
         });
     })
 }
